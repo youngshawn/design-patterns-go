@@ -13,7 +13,7 @@ type Shirt struct {
 }
 
 func (s *Shirt) setLogo(logo string) {
-	s.logo = s.logo
+	s.logo = logo
 }
 
 func (s *Shirt) getLogo() string {
