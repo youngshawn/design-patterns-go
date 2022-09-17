@@ -4,7 +4,7 @@ type musket struct {
 	Gun
 }
 
-func newMusket() IGun {
+func newMusket() *musket {
 	return &musket{
 		Gun: Gun{
 			name:  "Musket gun",
@@ -12,3 +12,5 @@ func newMusket() IGun {
 		},
 	}
 }
+
+var _ IGun = (*musket)(nil)

@@ -12,3 +12,5 @@ func newAk47() *Ak47 {
 		},
 	}
 }
+
+var _ IGun = (*Ak47)(nil)
